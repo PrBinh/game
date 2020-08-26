@@ -17,7 +17,7 @@ pipeline {
                sh 'mkdir -p minigame'
                // Copy all files in our Jenkins workspace to our project directory.               
                // Build the app.
-               sh 'python3 setup.py'              
+               //sh 'python3 mini_game.py'              
            }    
        }
        stage('Test') {
