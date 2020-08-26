@@ -14,11 +14,11 @@ pipeline {
            steps {
                // Create our project directory.
                sh 'cd ./'
-               sh 'mkdir -p ./game'
+               sh 'mkdir -p ./minigame'
                // Copy all files in our Jenkins workspace to our project directory.               
-               sh 'cp -r ${WORKSPACE}/* ./game'
+               sh 'cp -r ${WORKSPACE}/* ./minigame'
                // Build the app.
-               sh 'go build'              
+               sh 'python3 setup.py'              
            }    
        }
        stage('Test') {
@@ -30,9 +30,9 @@ pipeline {
            steps {                
                // Create our project directory.
                sh 'cd ./'
-               sh 'mkdir -p ./game'
+               sh 'mkdir -p ./minigame'
                // Copy all files in our Jenkins workspace to our project directory.               
-               sh 'cp -r ${WORKSPACE}/* ./game'
+               sh 'cp -r ${WORKSPACE}/* ./minigame'
                // Remove cached test results.
                sh 'go clean -cache'
                // Run Unit Tests.
