@@ -1,14 +1,14 @@
 pipeline {
    agent any
    environment {
-       registry = "binhdocker/webapp"
+       registry = "binhdocker/game"
        GOCACHE = "/tmp"
    }
    stages {
        stage('Build') {
            agent {
                docker {
-                   image 'golang'
+                   image 'python'
                }
            }
            steps {
@@ -24,7 +24,7 @@ pipeline {
        stage('Test') {
            agent {
                docker {
-                   image 'golang'
+                   image 'python'
                }
            }
            steps {                
