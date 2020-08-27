@@ -15,7 +15,6 @@ pipeline {
                sh 'cd ./'
                sh 'mkdir -p minigame'
                // Copy all files in our Jenkins workspace to our project directory.               
-               sh 'install sublime-text'
            }    
        }
        stage('Test') {
