@@ -4,4 +4,4 @@ WORKDIR /game
 
 COPY . .
 
-CMD ["python", "mini_game.py"] 
+CMD ["python3", "mini_game.py"] 
