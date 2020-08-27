@@ -4,6 +4,4 @@ WORKDIR /game
 
 COPY . .
 
-RUN install sublime-text
-
 CMD ["python", "mini_game.py"]
