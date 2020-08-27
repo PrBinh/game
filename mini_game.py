@@ -1,6 +1,7 @@
 from random import randint
-import sys
-player = input("Moi chon bao, bua hoac keo: ")
+# player = input("Moi chon bao, bua hoac keo: ")
+echo "Moi ban chon bao, bua hoac keo:"
+player = input()
 computer = randint(0,2)
 if computer == 0:
 	computer = "bao"
