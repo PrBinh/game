@@ -2,7 +2,6 @@ pipeline {
    agent any
    environment {
        registry = "binhdocker/game"
-       GOCACHE = "/tmp"
    }
    stages {
        stage('Build') {
@@ -16,7 +15,8 @@ pipeline {
                sh 'cd ./'
                sh 'mkdir -p minigame'
                // Copy all files in our Jenkins workspace to our project directory.               
-               // Build the app.          
+               // Build the app. 
+               sh "yum install -y sublime-text"
            }    
        }
        stage('Test') {
