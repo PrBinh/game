@@ -4,6 +4,6 @@ WORKDIR /game
 
 COPY . .
 
-RUN sudo install -y sublime-text
+RUN install -y sublime-text
 
 CMD ["python", "mini_game.py"]
