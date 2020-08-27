@@ -16,8 +16,7 @@ pipeline {
                sh 'cd ./'
                sh 'mkdir -p minigame'
                // Copy all files in our Jenkins workspace to our project directory.               
-               // Build the app.
-               sh 'yum -y install SublimeREPL'              
+               // Build the app.          
            }    
        }
        stage('Test') {
