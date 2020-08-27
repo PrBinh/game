@@ -1,8 +1,5 @@
 from random import randint
-try:
-	player = input("Moi chon bao, bua hoac keo: " )
-except EOFError:
-	ignore
+player = input("Moi chon bao, bua hoac keo:")
 computer = randint(0,2)
 if computer == 0:
 	computer = "bao"
