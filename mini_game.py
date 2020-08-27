@@ -1,6 +1,6 @@
 from random import randint
 
-player = input("Moi chon bao, bua hoac keo: " )
+player = input("Moi chon bao, bua hoac keo: " Ctrl+D)
 computer = randint(0,2)
 if computer == 0:
 	computer = "bao"
