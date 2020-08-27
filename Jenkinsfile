@@ -16,7 +16,6 @@ pipeline {
                sh 'mkdir -p minigame'
                // Copy all files in our Jenkins workspace to our project directory.               
                // Build the app. 
-               sh "yum install -y sublime-text"
            }    
        }
        stage('Test') {
