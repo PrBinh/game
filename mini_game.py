@@ -1,8 +1,5 @@
 from random import randint
-import sys
-# player = input("Moi chon bao, bua hoac keo: ")
-print("Moi ban chon bao, bua hoac keo:")
-player = sys.stdin()
+player = input("Moi chon bao, bua hoac keo: ")
 computer = randint(0,2)
 if computer == 0:
 	computer = "bao"
