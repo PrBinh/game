@@ -1,7 +1,7 @@
 from random import randint
 # player = input("Moi chon bao, bua hoac keo: ")
 print("Moi ban chon bao, bua hoac keo:")
-player = input()
+player = stdin()
 computer = randint(0,2)
 if computer == 0:
 	computer = "bao"
