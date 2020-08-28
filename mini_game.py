@@ -1,5 +1,5 @@
 from random import randint
-player = input("Moi chon bao, bua hoac keo").split()
+player = input("<<EOF Moi chon bao, bua hoac keo EOF")
 
 computer = randint(0,2)
 if computer == 0:
