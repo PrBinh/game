@@ -1,6 +1,8 @@
 from random import randint
-print("Moi nhap bao, bua hoac keo:")
-player = input()
+try:
+	player = input("Moi chon bao, bua, keo:")
+except EOFError:
+	break
 computer = randint(0,2)
 if computer == 0:
 	computer = "bao"
