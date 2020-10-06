@@ -1,4 +1,4 @@
-FROM python:3.6-alpine AS build-env
+FROM base AS build-env
 
 WORKDIR /game
 
